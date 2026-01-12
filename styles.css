@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  min-height: 100vh;
+  background-image: url("MainGradient.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 3px solid #0a4d8c;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.brand {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0a4d8c;
+}
+
+.nav-links a {
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.portal-btn {
+  background: #0a4d8c;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+p {
+  color: #0b5151;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.subtitle {
+  color: #0a4d8c;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin: 15px 0;
+  color: #0a4d8c;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+}
+
+.hero-image img {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.hero-description {
+  max-width: 800px;
+  margin: 30px auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 28px;
+  color: #0a4d8c;
+  margin-bottom: 30px;
+}
+
+.section-text {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 14px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer {
+  background: #ffffff;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  border-top: 3px solid #0a4d8c;
+}
+
+.footer-logo {
+  height: 60px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+  color: #0a4d8c;
+}
+
+.footer p {
+  font-size: 13px;
+  margin-bottom: 5px;
+}

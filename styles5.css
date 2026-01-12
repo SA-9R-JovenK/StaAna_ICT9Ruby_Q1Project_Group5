@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  min-height: 100vh;
+  background-image: url("MainGradient.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 3px solid #0a4d8c;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.brand {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0a4d8c;
+}
+
+.nav-links a {
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.portal-btn {
+  background: #0a4d8c;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.row {
+    display: flex; 
+    justify-content: center; 
+    margin: 0 -8px; 
+}
+
+.column {
+  width: 33.33%;
+  margin-bottom: 16px;
+  padding: 0 8px; 
+}
+
+.column2 {
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px; 
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.image-container {
+    width: 640px; 
+    height: 480px;
+    max-width: 100%; /* Ensure it shrinks with the column */
+    margin: 0 auto; 
+    overflow: hidden; 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  height: 100%; 
+}
+
+.card img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Fills the container, may crop */
+    display: block;
+}
+
+.container {
+  padding: 0 16px;
+  width: 100%; 
+  text-align: left; 
+}
+
+
+@media screen and (max-width: 650px) {
+  .column, .column2 { 
+    width: 100%;
+    display: block;
+  }
+  .image-container {
+      width: 100%;
+      height: auto; /* Allow height to adjust to maintain 640:480 aspect ratio on smaller screens */
+      padding-top: 75%; /* Calculated from 480/640 * 100% = 75% */
+      position: relative;
+  }
+  .card img {
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+}
+
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.footer {
+  background: #ffffff;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  border-top: 3px solid #0a4d8c;
+}
+
+.footer-logo {
+  height: 60px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+  color: #0a4d8c;
+}
+
+.footer p {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
